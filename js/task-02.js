@@ -35,10 +35,3 @@ el6.className = "item";
 
 list.append(el1, el2, el3, el4, el5, el6)
 
-
-
-
-
-console.log(list.children.length);
-console.log(ingredients.length);
-
