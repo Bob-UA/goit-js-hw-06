@@ -16,11 +16,18 @@ const images = [
 const list = document.querySelector(".gallery")
 console.log(list);
 
+const el1Item = document.createElement("li");
+
 const el1 = document.createElement("img");
+
+
 el1.src = images[0].url;
 el1.alt = images[0].alt;
 el1.className = "image";
 el1.width = 300;
 console.log(el1);
 
+console.log(el1Item);
+
 list.insertAdjacentHTML("beforeend", el1);
+console.log(list);
