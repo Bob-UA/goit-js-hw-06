@@ -22,3 +22,9 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+/* task-3 */
+
+.image:not(:last-of-type){
+  margin-bottom: 10px;
+}
