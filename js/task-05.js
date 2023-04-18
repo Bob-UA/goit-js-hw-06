@@ -5,6 +5,11 @@ const nameOutput = document.querySelector("#name-output");
 console.log(nameOutput);
 
 inputField.addEventListener("input", (event) => {
-    
-    nameOutput.textContent = event.currentTarget.value; 
+  if (event.currentTarget.value.length === 0) {
+     return nameOutput.textContent = "Anonymus";
+    }    
+nameOutput.textContent = event.currentTarget.value;
+  
+  
 });
+
