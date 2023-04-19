@@ -22,10 +22,14 @@ function destroyBoxes() {
   boxes.innerHTML = "";
 };
 
-function takeValue() {
-  input.addEventListener("input", createBoxes(input.value))
-};
 
-createButton.addEventListener("click", takeValue);
-destroyButton.addEventListener("click", destroyBoxes);
+createButton.addEventListener("click", onCreateButton);
+destroyButton.addEventListener("click", onDestroyButton);
 
+function onCreateButton(event) {
+  createBoxes(input.value);
+}
+
+function onDestroyButton() {
+  destroyBoxes();
+}
